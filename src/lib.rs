@@ -57,6 +57,10 @@ pub mod gitea;
 #[cfg_attr(docsrs, doc(cfg(feature = "google_cloud_sdk_emulators")))]
 /// **googles cloud sdk emulator** testcontainer
 pub mod google_cloud_sdk_emulators;
+#[cfg(feature = "greenmail")]
+#[cfg_attr(docsrs, doc(cfg(feature = "greenmail")))]
+/// **Greenmail** (SMTP, IMAP, POP3 Mail server) testcontainer
+pub mod greenmail;
 #[cfg(feature = "hashicorp_vault")]
 #[cfg_attr(docsrs, doc(cfg(feature = "hashicorp_vault")))]
 /// ‎**HashiCorp Vault** (secrets management) testcontainer
